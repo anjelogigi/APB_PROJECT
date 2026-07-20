@@ -1,4 +1,3 @@
-
 `include "defines.svh"
 
 class apb_test;
@@ -13,9 +12,11 @@ class apb_test;
     endfunction
 
     task run();
+
         env = new(drv_if, mon_if);
         env.build();
         env.start();
+
     endtask
 
 endclass
